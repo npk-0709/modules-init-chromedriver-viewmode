@@ -1,6 +1,6 @@
 ```python
 def getWindowPositionTypeFullBrowser(num_browsers: int, width_browser: int, height_browser: int, distance: int):
-    """distance is distance from windown to windown"""
+    """distance là khoảng cách giữa các cửa số với nhau"""
     w = width_browser
     h = height_browser
     width_screen, height_screen = ctypes.windll.user32.GetSystemMetrics(
@@ -21,7 +21,7 @@ def getWindowPositionTypeFullBrowser(num_browsers: int, width_browser: int, heig
 
 
 def getWindowPositionTypeStack(num_browsers: int, width_browser: int, height_browser: int, distance: int):
-    """distance is distance to windown stack"""
+    """distance là đoạn xếp chồng cửa sổ lên nhau"""
     w = width_browser
     h = height_browser
     width_screen, height_screen = ctypes.windll.user32.GetSystemMetrics(
